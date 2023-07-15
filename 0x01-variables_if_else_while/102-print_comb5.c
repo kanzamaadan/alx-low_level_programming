@@ -2,7 +2,6 @@
 
 /**
  * main - Entry point
- *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -27,7 +26,6 @@ int main(void)
 						putchar(' ');
 						putchar(num3 + '0');
 						putchar(num4 + '0');
-
 						if (!(num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9))
 						{
 							putchar(',');
@@ -40,6 +38,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
-}}
+}
