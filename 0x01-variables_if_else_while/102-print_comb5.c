@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -16,21 +15,21 @@ int main(void)
 			{
 				for (num4 = 0; num4 <= 9; num4++)
 				{
-					int first = num1 * 10 + num2;
-					int second = num3 * 10 + num4;
+int first = num1 * 10 +num2;
+int second = num3 * 10 + num4;
 
 					if (first < second)
 					{
-						putchar(num1 + '0');
-						putchar(num2 + '0');
-						putchar(' ');
-						putchar(num3 + '0');
-						putchar(num4 + '0');
+putchar(num1 + '0');
+putchar(num2 + '0');
+putchar(' ');
+putchar(num3 + '0');
+putchar(num4 + '0');
 
 						if (!(num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9))
 						{
-							putchar(',');
-							putchar(' ');
+putchar(',');
+putchar(' ');
 						}
 					}
 				}
