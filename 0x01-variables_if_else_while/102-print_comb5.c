@@ -1,42 +1,32 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int num1, num2, num3, num4;
+	int i, j,
 
-	for (num1 = 0; num1 <= 9; num1++)
+	for (i = 0; i < 100; i++)
 	{
-		for (num2 = 0; num2 <= 9; num2++)
+		for (j = 0; j < 100; j++)
 		{
-			for (num3 = 0; num3 <= 9; num3++)
+			if (i < j)
 			{
-				for (num4 = 0; num4 <= 9; num4++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ')
+				putchar((J / 10) + 48);
+				putchar((J % 10) + 48);
+				if (i != 98 || j != 99 )
 				{
-					int first = num1 * 10 + num2;
-					int second = num3 * 10 + num4;
-
-					if (first < second)
-					{
-						putchar(num1 + '0');
-						putchar(num2 + '0');
-						putchar(' ');
-						putchar(num3 + '0');
-						putchar(num4 + '0');
-						if (!(num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-
 	putchar('\n');
 	return (0);
-}
+}	
