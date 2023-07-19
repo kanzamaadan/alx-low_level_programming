@@ -18,11 +18,10 @@ int main(void)
 		fib3 = fib1 + fib2;
 		printf(", %lu", fib3);
 
-		fib1 = fib;
+		fib1 = fib2;
 		fib2 = fib3;
-		printf}
-
-("\n");
+	}
+	printf("\n");
 
 	return (0);
 }
