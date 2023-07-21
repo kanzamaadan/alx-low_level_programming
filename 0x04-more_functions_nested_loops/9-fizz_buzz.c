@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - Prints the Fizz-Buzz sequence from 1 to 100
+ * main - Prints the Fizz-Buzz sequence from 1 to 100
  *
- * Return: void
+ * Return: Always 0 (Success)
  */
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 
@@ -21,15 +21,6 @@ else
 printf("%d ", i);
 }
 printf("\n");
-}
 
-/**
- * main - Entry point of the program
- *
- * Return: 0 on success, other values on error
- */
-int main(void)
-{
-fizz_buzz();
 return (0);
 }
