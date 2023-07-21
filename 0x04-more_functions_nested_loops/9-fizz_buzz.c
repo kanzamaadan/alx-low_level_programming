@@ -1,17 +1,11 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - entry point
- *
- * Description: prints the numbers 1 - 100 w/
- * Fizz for multiples of 3, Buzz for multiples of 5
- *and FizzBuzz for multiples of both
+ * fizz_buzz - Prints the Fizz-Buzz sequence from 1 to 100
  *
  * Return: void
  */
-
-int main(void)
+void fizz_buzz(void)
 {
 int i;
 
@@ -24,10 +18,18 @@ printf("Fizz ");
 else if (i % 5 == 0)
 printf("Buzz ");
 else
-printf("%i ", i);
-if (i < 100)
-printf(" ");
+printf("%d ", i);
 }
 printf("\n");
+}
+
+/**
+ * main - Entry point of the program
+ *
+ * Return: 0 on success, other values on error
+ */
+int main(void)
+{
+fizz_buzz();
 return (0);
 }
