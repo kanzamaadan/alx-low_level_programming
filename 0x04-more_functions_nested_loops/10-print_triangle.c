@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle of '#' characters
- *                  of a specified size.
- *
- * @size: The size of the triangle to print.
+ * print_triangle - Prints a triangle using the # character
+ * @size: The size of the triangle
  */
 void print_triangle(int size)
 {
@@ -20,10 +18,8 @@ for (i = 0; i < size; i++)
 {
 for (j = 0; j < size - i; j++)
 _putchar(' ');
-
 for (j = 0; j <= i; j++)
 _putchar('#');
-
 _putchar('\n');
 }
 }
