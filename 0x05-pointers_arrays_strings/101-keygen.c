@@ -9,11 +9,10 @@
 int main(void)
 {
 char password[84];
-int index = 0, sum = 0, diff_half1, diff_half2;
+int index = 0, sum = 0, target_sum = 2772;
 
 srand(time(0));
-
-while (sum < 2772)
+while (sum < target_sum)
 {
 password[index] = 33 + rand() % 94;
 sum += password[index];
@@ -22,21 +21,22 @@ index++;
 
 password[index] = '\0';
 
-if (sum != 2772)
+if (sum != target_sum)
 {
-diff_half1 = (sum - 2772) / 2;
-diff_half2 = (sum - 2772) / 2;
+int diff = sum - target_sum;
+int i = 0;
 
-if ((sum - 2772) % 2 != 0)
-diff_half1++;
-
-for (index = 0; password[index]; index++)
+while (diff > 0)
 {
-if (password[index] >= (33 + diff_half2))
+if (password[i] >= 34 && password[i] <= 126)
 {
-password[index] -= diff_half2;
-break;
+password[i]--;
+diff--;
 }
+
+i++;
+if (password[i] == '\0')
+i = 0;
 }
 }
 
