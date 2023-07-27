@@ -13,13 +13,14 @@ char *p;
 
 p = (char *)a;
 i = 0;
-while (i < sizeof(a) / sizeof(int))
+while (i < (int)(sizeof(a) / sizeof(int)))
 {
 _putchar(*p);
 p += sizeof(int);
 i++;
 }
 _putchar('\n');
+
 
 _putchar('a');
 _putchar('[');
@@ -30,6 +31,7 @@ _putchar('=');
 _putchar(' ');
 _putchar('b');
 _putchar('\n');
+
 
 return (0);
 }
