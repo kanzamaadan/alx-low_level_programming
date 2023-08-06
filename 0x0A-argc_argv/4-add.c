@@ -21,13 +21,18 @@ return (0);
 
 for (i = 1; i < argc; i++)
 {
-int num = atoi(argv[i]);
-
-if (num == 0 && argv[i][0] != '0')
+int num = 0;
+int j = 0;
+while (argv[i][j] != '\0')
+{
+if (argv[i][j] < '0' || argv[i][j] > '9')
 {
 printf("Error\n");
 return (1);
 }
+j++;
+}
+num = atoi(argv[i]);
 sum += num;
 }
 
