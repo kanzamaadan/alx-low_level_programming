@@ -25,11 +25,6 @@ char *current_arg = argv[i];
 
 while (*current_arg)
 {
-/**
- * if (*current_arg < '0' || *current_arg > '9') =
- *  ((*current_arg < 'a' || *current_arg > 'z') &&
- *  (*current_arg < 'A' || *current_arg > 'Z'))
- */
 if (*current_arg < '0' || *current_arg > '9')
 {
 printf("%s\n", "Error");
