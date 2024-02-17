@@ -1,0 +1,4 @@
+# Ignore main.c files
+main.c
+# Ignore compiled executables
+*.out
