@@ -45,3 +45,4 @@ close(o);
 /* Return the number of bytes written */
 return (w);
 }
+
